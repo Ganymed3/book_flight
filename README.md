@@ -84,7 +84,7 @@ Example:
 ```
 
 #### --verbose, -v
-If used, the script prints additional info about the booking process and eventually error messages.
+If used, the script prints additional info about the booking process and eventually error messages. Recommended for humans.
 
 #### --debug
 Prints HTTP requests and responces for the debugging purposes.

@@ -77,7 +77,7 @@ class BookFlight(object):
       
       # BAGS: optional, 1 arg (int), default 0
       parser.add_argument(
-         '--bags', help='specify the number of bags', type=int, default=0,
+         '--bags', help='specify the number of bags', type=int,
          nargs=1
       )
       # VERBOSE: optional, 0 arg
@@ -333,12 +333,17 @@ class BookFlight(object):
       p['birthday']   = _passenger.birthday
       p['firstName']  = _passenger.first_name
       p['email']      = _passenger.email
+
+      if self.args.bags:
+         bags = self.args.bags[0]
+      else:
+         bags = 0
       
       data = {}
       data['currency']        = _currency
       data['passengers']      = [p]
       data['booking_token']   = _token
-      data['bags']            = self.args.bags[0]
+      data['bags']            = bags
             
       data_json = json.dumps(data)
       
