@@ -84,7 +84,7 @@ Example:
 ```
 
 #### --verbose, -v
-If used, the script prints additional info about the booking process and evantually error messages.
+If used, the script prints additional info about the booking process and eventually error messages.
 
 #### --debug
 Prints HTTP requests and responces for the debugging purposes.
@@ -100,8 +100,7 @@ Example:
 
 
 ### Author
-Miroslav Macek
-[email](macekmirek@email.cz)
+Miroslav Macek ([email](macekmirek@email.cz))
 
 
 
